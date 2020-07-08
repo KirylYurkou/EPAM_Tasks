@@ -1,4 +1,4 @@
-package Task_1;
+package LinePrograms;
 
 import java.util.Scanner;
 
