@@ -18,5 +18,6 @@ public class Task2 {
         c = Double.parseDouble(reader.readLine());
         double z = (b+(Math.sqrt(Math.pow(b,2))+4*a*c))/2*a-(Math.pow(a,3)*c)+Math.pow(b,-2);
         System.out.println("Результат = "+z);
+        reader.close();
     }
 }
