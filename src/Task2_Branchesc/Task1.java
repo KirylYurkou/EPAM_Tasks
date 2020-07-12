@@ -20,6 +20,7 @@ public class Task1 {
         if (a==90||b==90||c==90){
             System.out.println(", он прямоугольный.");
         }
+        reader.close();
     }
 }
 
