@@ -1,4 +1,4 @@
-package Task2_Branchesc;
+package Task1_2_Branchesc;
 
 import java.io.BufferedReader;
 import java.io.IOException;
