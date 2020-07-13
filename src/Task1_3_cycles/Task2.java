@@ -16,6 +16,7 @@ public class Task2 {
         double h = Double.parseDouble(reader.readLine());
         System.out.println("Введите x");
         double x = Double.parseDouble(reader.readLine());
+        reader.close();
         double y = 0;
         while (a<=b){
             if (x>2){
