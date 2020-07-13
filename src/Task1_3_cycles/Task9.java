@@ -12,6 +12,7 @@ public class Task9 {
         String a = reader.readLine();
         System.out.println("Введите  b");
         String b = reader.readLine();
+        reader.close();
         for (int f = 0; f < a.length(); f++) {
             a.charAt(f);
         }
