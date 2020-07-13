@@ -13,7 +13,7 @@ public class Task1 {
         int a = Integer.parseInt(reader.readLine());
         reader.close();
         int sum = 0;
-        for (int i = 0;i<=a;i++){
+        for (int i = 1;i<=a;i++){
             sum+=i;
         }
         System.out.println("Суммма чисел равна "+sum);
