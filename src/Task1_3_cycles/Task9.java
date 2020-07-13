@@ -20,7 +20,7 @@ public class Task9 {
         for (int g = 0; g < b.length(); g++) {
             b.charAt(g);
         }
-        System.out.println("\n The same numbers from two lines is: ");
+        System.out.println("\n Цифры которые входят в состав чисел : ");
         for (int i = 0; i < a.length(); i++) {
             for (int j = 0; j < b.length(); j++) {
                 if (a.charAt(i) == b.charAt(j)) {
