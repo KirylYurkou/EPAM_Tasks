@@ -17,6 +17,7 @@ public class Task1 {
         }
         System.out.println("Введите делитель K");
         int k = Integer.parseInt(reader.readLine());
+        reader.close();
         int sum = 0;
         for (int i = 0;i<nums.length;i++) {
             if (nums[i] % k == 0) {                           //Находим кратные элементы
