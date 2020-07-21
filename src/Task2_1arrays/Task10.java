@@ -8,7 +8,7 @@ import java.util.ArrayList;
 //Дан целочисленный массив с количеством элементов п.
 // Сжать массив, выбросив из него каждый второй элемент (освободившиеся элементы заполнить нулями).
 // Примечание. Дополнительный массив не использовать.
-public class TAsk10 {
+public class Task10 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Введите длинну массива");
