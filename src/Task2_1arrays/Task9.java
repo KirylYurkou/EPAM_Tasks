@@ -1,11 +1,21 @@
 package Task2_1arrays;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 //В массиве целых чисел с количеством элементов n найти наиболее часто встречающееся число.
 // Если таких чисел несколько, то определить наименьшее из них.
 public class Task9 {
-    public static void main(String[] args) {
-        int[] data = {1, 2, 7, 8, 9, 1, 2, 3, 4, 5, 6, 1, 2, 3, 7, 8, 8, 3, 4, 5};
-
-
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите длинну массива");
+        int length = Integer.parseInt(reader.readLine());
+        int[] data = new int[length];
+        System.out.println("Введите элементы массива");
+        for (int i =0;i<data.length;i++){
+            data[i]= Integer.parseInt(reader.readLine());
+        }
         int[] popular = new int[data.length];
 
         for (int i = 0; i < data.length; i++) {
@@ -27,7 +37,7 @@ public class Task9 {
                 valResult = data[i];
             }
         }
-        System.out.println(valResult);
+        System.out.println("Наименьшее наиболее часто встречающееся число "+valResult);
     }
 }
 
