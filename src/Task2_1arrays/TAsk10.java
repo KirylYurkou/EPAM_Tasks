@@ -18,6 +18,7 @@ public class TAsk10 {
         for (int i=0;i<l;i++){
             nums.add(Integer.parseInt(reader.readLine()));
         }
+        reader.close();
         for (int i=1;i<nums.size();i+=2){
             nums.set(i,0);
         }
