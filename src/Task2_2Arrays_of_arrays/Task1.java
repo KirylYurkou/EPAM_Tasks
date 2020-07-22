@@ -12,6 +12,7 @@ public class Task1 {
         int m = Integer.parseInt(reader.readLine());
         System.out.println("Ширина матрицы: ");
         int n = Integer.parseInt(reader.readLine());
+        reader.close();
         matrixA = new int[m][n];
         for (int i = 0; i < m; i++) {
             System.out.println((i + 1) + "-я строка матрицы: ");

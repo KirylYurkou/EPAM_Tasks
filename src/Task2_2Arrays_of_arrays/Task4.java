@@ -1,11 +1,16 @@
 package Task2_2Arrays_of_arrays;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 //Сформировать квадратную матрицу порядка nпо заданному образцу(n-четное):
 public class Task4 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         int n,k,num;
-        Scanner s = new Scanner(System.in);
-        n=s.nextInt(); k=1;num=n;
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите порядок матрицы n");
+        n = Integer.parseInt(reader.readLine());
+        reader.close();
+        k=1;num=n;
         int [] [] arr = new int  [n] [n];
         for(int i =0;i<arr.length;i++) {
             if(i%2==0) {

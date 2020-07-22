@@ -12,6 +12,7 @@ public class Task3 {
         int k = Integer.parseInt(reader.readLine());
         System.out.println("Введите столбец");
         int p = Integer.parseInt(reader.readLine());
+        reader.close();
         int[][] matrix = {{2,4,5,6,7},
                           {3,4,5,6,2},
                           {6,4,3,2,4},
