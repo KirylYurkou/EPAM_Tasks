@@ -24,5 +24,20 @@ public class Task12 {
         for (int i = 0; i < matrix.length; i++) {
             System.out.println(Arrays.toString(matrix[i]));
         }
+        System.out.println();
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = matrix[i].length - 1; j > 0; j--) {
+                for (int k = 0; k < j; k++) {
+                    if (matrix[i][k] < matrix[i][k + 1]) {
+                        int tmp = matrix[i][k];
+                        matrix[i][k] = matrix[i][k + 1];
+                        matrix[i][k + 1] = tmp;
+                    }
+                }
+            }
+        }
+        for (int i = 0; i < matrix.length; i++) {
+            System.out.println(Arrays.toString(matrix[i]));
+        }
     }
 }
